@@ -3,6 +3,7 @@ pal_swap_init_system(shd_pal_swapper) // load the palette swapper shader
 save_init()
 
 // the instances you will be using no matter what
+instance_create(obj_plat_controller)
 instance_create(o_camera)
 instance_create(o_window)
 instance_create(o_dev_musiccontrol)

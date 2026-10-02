@@ -1,3 +1,7 @@
+function debug_print_obj(_message) {
+	show_debug_message($"[{object_get_name(object_index)}]: {_message}");
+}
+
 function string_to_color(color_string){
 	switch color_string {
 		case "c_red":
