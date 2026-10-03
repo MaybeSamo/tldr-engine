@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"snd_ui_select",
+  "%Name":"snd_heavyswing",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,9 +10,9 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.18716553,
+  "duration":1.0389569,
   "exportDir":"",
-  "name":"snd_ui_select",
+  "name":"snd_heavyswing",
   "parent":{
     "name":"sounds",
     "path":"folders/@Engine/sounds.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_ui_select.wav",
+  "soundFile":"snd_heavyswing.wav",
   "volume":1.0,
 }

@@ -12,12 +12,27 @@ jumpheight = 10;
 jumping = false;
 jumptime = 0;
 jump_mintime = 4;
+was_jumping = false;
+
+land_anim = false;
+land_anim_time = 0;
 
 runstop_anim = false;
 turn_anim = false;
+
+attacking = false;
+swing_phase = 0;
+attack_hold_timer = 0;
+swing_snd_played = false;
 
 grav = 0.625;
 
 gravity = grav;
 
 grounded = false;
+
+variables_to_draw = [
+"hspeed",
+"vspeed",
+"swing_phase",
+]

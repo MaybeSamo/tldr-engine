@@ -9,9 +9,11 @@ transition_duration = 20;
 
 enter_plat = function() {
 	var _kr = party_get_inst("kris");
-	_kr.visible = false;
-	_kr.is_player = false;
-	instance_create(obj_plat_player, _kr.x, _kr.y - 20);
+	if (_kr) {
+		_kr.visible = false;
+		_kr.is_player = false;
+		instance_create(obj_plat_player, _kr.x, _kr.y - 20);
+	}
 	
 	global.plat_mode = true;
 	audio_play(snd_platswap_1);
