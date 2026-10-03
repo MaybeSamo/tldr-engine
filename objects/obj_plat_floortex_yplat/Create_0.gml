@@ -1,1 +1,1 @@
-debug_draw = true;
+debug_draw = false;

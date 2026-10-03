@@ -29,8 +29,8 @@
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"tile_layer","filters":[],"listItems":[],"multiselect":false,"name":"tile_layer","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"TILES_MAIN\"","varType":2,},
     {"$GMObjectProperty":"v2","%Name":"layer_make_invisible","filters":[],"listItems":[],"multiselect":false,"name":"layer_make_invisible","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
-    {"$GMObjectProperty":"v2","%Name":"match_layer_depth","filters":[],"listItems":[],"multiselect":false,"name":"match_layer_depth","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":3,},
-    {"$GMObjectProperty":"v2","%Name":"remove_original_tile","filters":[],"listItems":[],"multiselect":false,"name":"remove_original_tile","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":3,},
+    {"$GMObjectProperty":"v2","%Name":"match_layer_depth","filters":[],"listItems":[],"multiselect":false,"name":"match_layer_depth","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"True","varType":3,},
+    {"$GMObjectProperty":"v2","%Name":"remove_original_tile","filters":[],"listItems":[],"multiselect":false,"name":"remove_original_tile","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"True","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

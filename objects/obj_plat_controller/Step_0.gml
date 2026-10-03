@@ -6,3 +6,11 @@ if (keyboard_check_pressed(ord("P"))) {
 	else
 		exit_plat();
 }
+
+if (keyboard_check_pressed(ord("D"))) {
+	with (obj_plat_floortex_floor)
+		debug_draw = !debug_draw;
+		
+	with (obj_plat_floortex_yplat)
+		debug_draw = !debug_draw;
+}

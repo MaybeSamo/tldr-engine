@@ -13,6 +13,9 @@ jumping = false;
 jumptime = 0;
 jump_mintime = 4;
 
+runstop_anim = false;
+turn_anim = false;
+
 grav = 0.625;
 
 gravity = grav;
