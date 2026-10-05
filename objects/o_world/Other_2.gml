@@ -140,7 +140,7 @@ array_push(global.key_items, new item_key_cell_phone())
 
 party_init()
 global.party_names = [   // <-- if you wish to change the default team members, change them here
-    "kris", "susie", "ralsei"
+    "kris"
 ]
 party_apply_equipment()
 

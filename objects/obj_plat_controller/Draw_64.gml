@@ -1,1 +1,1 @@
-draw_text(50, 50, $"swap_progress: {swap_progress}");
+//draw_text(50, 50, $"swap_progress: {swap_progress}");

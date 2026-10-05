@@ -9,16 +9,15 @@ transition_duration = 20;
 
 enter_plat = function() {
 	var _kr = party_get_inst("kris");
-	if (_kr) {
+	if (_kr && !instance_exists(obj_plat_player_new)) {
 		_kr.visible = false;
 		_kr.is_player = false;
-		instance_create(obj_plat_player, _kr.x, _kr.y - 20);
+		instance_create(obj_plat_player_new, _kr.x, _kr.y - 20);
+		o_camera.target = obj_plat_player_new;
 	}
 	
 	global.plat_mode = true;
 	audio_play(snd_platswap_1);
-	
-	o_camera.target = obj_plat_player;
 	
 	tween(id, "swap_progress", 0, 1, transition_duration, EaseType.EaseInOutSine);
 }

@@ -1,14 +1,14 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"tile_gardenofhopes",
+  "%Name":"tile_cliffs",
   "autoTileSets":[],
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"tile_gardenofhopes",
-  "out_columns":14,
+  "name":"tile_cliffs",
+  "out_columns":21,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -18,23 +18,21 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"spr_tiles_grass",
-    "path":"sprites/spr_tiles_grass/spr_tiles_grass.yy",
+    "name":"spr_tiles_cliffs",
+    "path":"sprites/spr_tiles_cliffs/spr_tiles_cliffs.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
     "name":"Default",
     "path":"texturegroups/Default",
   },
-  "tileAnimationFrames":[
-    {"$GMTileAnimation":"","%Name":"animation_1","frames":[57,58,59,60,],"name":"animation_1","resourceType":"GMTileAnimation","resourceVersion":"2.0",},
-  ],
-  "tileAnimationSpeed":3.0,
+  "tileAnimationFrames":[],
+  "tileAnimationSpeed":15.0,
   "tileHeight":20,
   "tilehsep":2,
   "tilevsep":2,
   "tileWidth":20,
   "tilexoff":1,
   "tileyoff":1,
-  "tile_count":210,
+  "tile_count":462,
 }
