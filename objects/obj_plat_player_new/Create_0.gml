@@ -61,6 +61,8 @@ grav = 0.625;
 can_jump = true;
 can_swing = true;
 
+dont_step = false;
+
 grounded = false;
 
 xspd = 0;
@@ -87,6 +89,19 @@ change_state = function(_state) {
 		swing_phase = 0;
 	
 	state = _state;
+}
+
+gen_hitbox = function(_sprite, _startframe = 0, _endframe = 7) {
+    var _hbx = instance_create(obj_plat_slash_hbx, x, y)
+    
+    _hbx.sprite_index = _sprite
+    _hbx.image_index = _startframe;
+    _hbx.image_speed = image_speed;
+    _hbx.image_xscale = image_xscale;
+    _hbx.visible = false;
+    _hbx.end_frame = _endframe;
+    
+    return _hbx;
 }
 
 variables_to_draw = [

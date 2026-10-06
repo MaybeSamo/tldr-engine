@@ -527,6 +527,7 @@
     {"id":{"name":"obj_plat_floortex","path":"objects/obj_plat_floortex/obj_plat_floortex.yy",},},
     {"id":{"name":"obj_plat_player_new","path":"objects/obj_plat_player_new/obj_plat_player_new.yy",},},
     {"id":{"name":"obj_plat_player","path":"objects/obj_plat_player/obj_plat_player.yy",},},
+    {"id":{"name":"obj_plat_slash_hbx","path":"objects/obj_plat_slash_hbx/obj_plat_slash_hbx.yy",},},
     {"id":{"name":"obj_platswap_statue","path":"objects/obj_platswap_statue/obj_platswap_statue.yy",},},
     {"id":{"name":"path_ex_dforest_dancers1","path":"paths/path_ex_dforest_dancers1/path_ex_dforest_dancers1.yy",},},
     {"id":{"name":"path_ex_dforest_dancers2","path":"paths/path_ex_dforest_dancers2/path_ex_dforest_dancers2.yy",},},

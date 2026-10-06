@@ -1,5 +1,7 @@
 if (live_call()) return live_result;
 
+if (dont_step) exit;
+
 var _key_right = InputCheck(INPUT_VERB.RIGHT);
 var _key_left = InputCheck(INPUT_VERB.LEFT);
 var _key_jump = InputCheck(INPUT_VERB.CANCEL);
@@ -132,6 +134,7 @@ switch (state) {
 		var _index = floor(image_index);
 		
 		if (_index == 1 && swing_phase == 0) {
+            gen_hitbox(spr_kris_plat_slash_hbx, 0, 2);
 			swing_phase = 1;
 			audio_play(snd_ui_cancel);
 		}
@@ -139,11 +142,13 @@ switch (state) {
 		if (_key_swing) {
 			
 			if (_index == 5 && swing_phase == 1) {
+                gen_hitbox(spr_kris_plat_slash_hbx, 0, 2);
 				swing_phase = 2;
 				audio_play(snd_heavyswing, 0, 1, 1.1);
 			}
 			
 			if (_index == 8 && swing_phase == 2) {
+                gen_hitbox(spr_kris_plat_slash_hbx, 0, 2);
 				swing_phase = 3;
 				audio_play(snd_ultraswing, 0, 1, 1.1);
 			}

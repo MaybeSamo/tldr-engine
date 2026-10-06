@@ -1,0 +1,1 @@
+end_frame = image_number - 1;

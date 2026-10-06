@@ -1,24 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_platswap_statue",
+  "%Name":"obj_plat_slash_hbx",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_plat_slash_hbx","path":"objects/obj_plat_slash_hbx/obj_plat_slash_hbx.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_platswap_statue",
+  "name":"obj_plat_slash_hbx",
   "overriddenProperties":[],
   "parent":{
     "name":"plat",
     "path":"folders/@Engine/objects/plat.yy",
   },
-  "parentObjectId":{
-    "name":"o_ow_interactable",
-    "path":"objects/o_ow_interactable/o_ow_interactable.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -36,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_platswap_statue_top_new",
-    "path":"sprites/spr_platswap_statue_top_new/spr_platswap_statue_top_new.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

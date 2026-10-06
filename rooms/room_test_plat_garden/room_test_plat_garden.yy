@@ -31,6 +31,7 @@
     {"name":"inst_161EB99C","path":"rooms/room_test_plat_garden/room_test_plat_garden.yy",},
     {"name":"inst_4C9A4BC1","path":"rooms/room_test_plat_garden/room_test_plat_garden.yy",},
     {"name":"inst_66AF56A8","path":"rooms/room_test_plat_garden/room_test_plat_garden.yy",},
+    {"name":"inst_21D276D3","path":"rooms/room_test_plat_garden/room_test_plat_garden.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -78,7 +79,8 @@
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":3.0,"scaleY":6.0,"x":200.0,"y":380.0,},
       ],"layers":[],"name":"FLOORTEX","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":400,"effectEnabled":true,"effectType":null,"gridX":20,"gridY":20,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v4","%Name":"inst_66AF56A8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_66AF56A8","objectId":{"name":"o_dev_playermarker","path":"objects/o_dev_playermarker/o_dev_playermarker.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":60.0,"y":400.0,},
+        {"$GMRInstance":"v4","%Name":"inst_66AF56A8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_66AF56A8","objectId":{"name":"o_dev_playermarker","path":"objects/o_dev_playermarker/o_dev_playermarker.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":80.0,"y":440.0,},
+        {"$GMRInstance":"v4","%Name":"inst_21D276D3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_21D276D3","objectId":{"name":"obj_platswap_statue","path":"objects/obj_platswap_statue/obj_platswap_statue.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":40.0,"y":420.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets_1","assets":[],"depth":500,"effectEnabled":true,"effectType":null,"gridX":20,"gridY":20,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Assets_1","properties":[],"resourceType":"GMRAssetLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"TILES_MAIN","depth":600,"effectEnabled":true,"effectType":null,"gridX":20,"gridY":20,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"TILES_MAIN","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":25,"SerialiseWidth":125,"TileCompressedData":[

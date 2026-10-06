@@ -27,4 +27,9 @@ exit_plat = function() {
 	audio_play(snd_platswap_2);
 	
 	tween(id, "swap_progress", 1, 0, transition_duration, EaseType.EaseInOutSine);
+    with (obj_plat_player_new) {
+        dont_step = true;
+        tween(id, "y", y, obj_platswap_statue.ystart, other.transition_duration, EaseType.EaseInOutSine);
+        tween(id, "x", x, obj_platswap_statue.xstart, other.transition_duration, EaseType.EaseInOutSine);
+    }
 }

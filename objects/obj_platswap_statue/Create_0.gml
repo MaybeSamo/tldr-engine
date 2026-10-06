@@ -2,6 +2,7 @@ event_inherited();
 
 shinealpha = 0;
 shinetimer = 0;
+depth_override = true;
 
 image_index = 0;
 
