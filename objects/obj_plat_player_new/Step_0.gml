@@ -167,9 +167,20 @@ switch (state) {
 		
 		break;
 	}
+	
+	case PlatPlayerState.TransitionOut: {
+		can_accel = false;
+		can_jump = false;
+		can_swing = false;
+		
+		if (sprite_index == slash_ground_sprite && image_index >= 4) {
+			image_speed = 0;
+			image_index = 4;
+		}
+	}
 }
 
-if (!grounded)
+if (!grounded && state != PlatPlayerState.TransitionOut)
 	change_state(PlatPlayerState.Airborne);
 
 if ((grounded && can_jump)

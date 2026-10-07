@@ -11,6 +11,8 @@ enum PlatPlayerState {
 	SwingAir,
 	Hurt,
 	Landing,
+	TransitionIn,
+	TransitionOut,
 }
 
 #macro DIR_LEFT -1
