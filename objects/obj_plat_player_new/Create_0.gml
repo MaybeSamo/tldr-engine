@@ -26,6 +26,7 @@ idle_sprite = spr_kris_plat_idle;
 run_sprite = spr_kris_plat_run;
 runstop_sprite = spr_kris_plat_runstop;
 slash_ground_sprite = spr_kris_plat_slash_ground;
+slash_air_sprite = spr_kris_plat_slash_air;
 turn_sprite = spr_kris_plat_turn;
 land_sprite = spr_kris_plat_land;
 jump_sprite = spr_kris_jump_up;
@@ -60,8 +61,9 @@ swing_snd_played = false;
 
 grav = 0.625;
 
-can_jump = true;
+can_jump = true
 can_swing = true;
+can_swing_air = false;
 
 dont_step = false;
 
@@ -76,6 +78,7 @@ animation_end = function() {
 
 change_state = function(_state) {
 	switch (_state) {
+        case PlatPlayerState.SwingAir:
 		case PlatPlayerState.SwingGround:
 		case PlatPlayerState.Landing:
 		case PlatPlayerState.Airborne:

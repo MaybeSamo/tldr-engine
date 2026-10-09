@@ -13,7 +13,12 @@ enter_plat = function() {
 		_kr.visible = false;
 		_kr.is_player = false;
 		instance_create(obj_plat_player_new, _kr.x, _kr.y - 20);
+        obj_plat_player_new.state = PlatPlayerState.TransitionIn;
 		o_camera.target = obj_plat_player_new;
+        
+        call_later(transition_duration, time_source_units_frames, function () {
+            obj_plat_player_new.change_state(PlatPlayerState.Idle);
+        })
 	}
 	
 	global.plat_mode = true;

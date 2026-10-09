@@ -1794,8 +1794,8 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"room_init","path":"rooms/room_init/room_init.yy",},},
-    {"roomId":{"name":"room_test_plat_garden","path":"rooms/room_test_plat_garden/room_test_plat_garden.yy",},},
     {"roomId":{"name":"room_test_plat_cliff","path":"rooms/room_test_plat_cliff/room_test_plat_cliff.yy",},},
+    {"roomId":{"name":"room_test_plat_garden","path":"rooms/room_test_plat_garden/room_test_plat_garden.yy",},},
     {"roomId":{"name":"room_test_plat","path":"rooms/room_test_plat/room_test_plat.yy",},},
     {"roomId":{"name":"room_test_main","path":"rooms/room_test_main/room_test_main.yy",},},
     {"roomId":{"name":"room_test_movement","path":"rooms/room_test_movement/room_test_movement.yy",},},

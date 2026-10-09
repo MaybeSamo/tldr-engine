@@ -20,7 +20,8 @@ switch (state) {
 		can_jump = true;
 		can_accel = true;
 		can_swing = true;
-		
+		can_swing_air = false;
+        
 		image_speed = 0.25;
 		sprite_index = idle_sprite;
 			
@@ -34,6 +35,7 @@ switch (state) {
 		can_jump = true;
 		can_accel = true;
 		can_swing = true;
+        can_swing_air = false;
 		
 		image_speed = 0.25;
 		sprite_index = run_sprite;
@@ -56,6 +58,7 @@ switch (state) {
 		can_jump = true;
 		can_accel = true;
 		can_swing = true;
+        can_swing_air = false;
 		
 		sprite_index = runstop_sprite;
 		
@@ -65,7 +68,10 @@ switch (state) {
 	}
 	
 	case PlatPlayerState.Jumpsquat: {
+        can_accel = true;
 		can_jump = false;
+        can_swing = true;
+        can_swing_air = false;
 		
 		sprite_index = land_sprite;
 		
@@ -83,6 +89,8 @@ switch (state) {
 	case PlatPlayerState.Airborne: {
 		can_accel = true;
 		can_jump = true;
+        can_swing_air = true;
+        can_swing = false;
 		
 		image_index = 0.25;
 		
@@ -107,6 +115,8 @@ switch (state) {
 	case PlatPlayerState.Landing: {
 		can_accel = true;
 		can_jump = true;
+        can_swing = true;
+        can_swing_air = false;
 		
 		jumpsquat += 1;
 		
@@ -127,6 +137,7 @@ switch (state) {
 		can_accel = false;
 		can_jump = false;
 		can_swing = false;
+        can_swing_air = false;
 		
 		sprite_index = slash_ground_sprite;
 		image_speed = 0.5;
@@ -172,15 +183,37 @@ switch (state) {
 		can_accel = false;
 		can_jump = false;
 		can_swing = false;
+        image_speed = 0.3;
 		
 		if (sprite_index == slash_ground_sprite && image_index >= 4) {
 			image_speed = 0;
 			image_index = 4;
 		}
+        
+        break;
 	}
+    
+    case PlatPlayerState.SwingAir: {
+        sprite_index = slash_air_sprite;
+        if (image_index < 8) {
+            if (obj_plat_controller.transition_duration >= 1)
+                gen_hitbox(spr_kris_plat_slash_hbxair, 0, sprite_get_number(spr_kris_plat_slash_hbxair) - 1);
+            image_index = 8;
+        }
+        image_speed = 0.5;
+        
+        if (animation_end())
+            change_state(PlatPlayerState.Airborne);
+        
+        if (grounded)
+            change_state(PlatPlayerState.Landing);
+        
+        break;
+    }
 }
 
-if (!grounded && state != PlatPlayerState.TransitionOut)
+if (!grounded && (state != PlatPlayerState.TransitionOut
+    && state != PlatPlayerState.SwingAir))
 	change_state(PlatPlayerState.Airborne);
 
 if ((grounded && can_jump)
@@ -191,6 +224,11 @@ if ((grounded && can_jump)
 
 if (can_swing && _key_swing_pressed && state != PlatPlayerState.SwingGround && grounded) {
 	change_state(PlatPlayerState.SwingGround);
+}
+
+if (can_swing_air && _key_swing_pressed && state != PlatPlayerState.SwingAir && state != PlatPlayerState.TransitionIn && !grounded) {
+    change_state(PlatPlayerState.SwingAir);
+    audio_play(snd_heavyswing, 0, 1, 1.1);
 }
 
 if (sign(xspd) != 0)
